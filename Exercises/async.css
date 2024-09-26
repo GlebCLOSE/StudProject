@@ -1,0 +1,27 @@
+.main {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: grey;
+    color: white;
+    padding: 30px;
+    text-align:center;
+}
+
+header__text {
+    font-size: 50px;
+}
+
+body {
+    background-color: antiquewhite;
+    color: brown;
+    padding: 20px;
+    padding-left: 10%;
+}
+
+body__header {
+    font-size: 35px;
+    padding: 20px;
+}
