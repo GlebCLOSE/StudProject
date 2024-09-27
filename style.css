@@ -1,4 +1,46 @@
-wrapper {
+.wrapper {
     margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
+.block {
+    display: block;
+}
+
+.block_background {
+    background-image: url("background.jpg");
+    height: 1080px;
+}
+
+.header {
+    display: flex;
+}
+
+.menu {
+    list-style-type: none;
+    color: white;
+}
+
+.menu__item {
+    display: inline-block;
+}
+
+.menu__link {
+    padding: 30px;
+    text-decoration: none;
+}
+
+.header__menu {
+    width: 33%;
+    display: inline-block;
+}
+
+.header__logo {
+    width: 33%;
+    display: inline-block;
+}
+
+.header__links {
+    width: 33%;
+    display: inline-block;
+}
