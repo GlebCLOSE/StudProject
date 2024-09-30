@@ -31,7 +31,7 @@
 }
 
 .menu__link {
-    padding: 40px;
+    padding: 10px;
     text-decoration: none;
     border: 2px solid rgba(247, 162, 36, 0.925);
     color: white;
@@ -89,7 +89,36 @@
     color: white;
     line-height: 1;
   }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 800px;
+    width: 100%;
+  }
+
+  .title__text {
+    font-size: 50px;
+  }
+
+  .title__subtext {
+    font-size: 25px;
+    text-align: center;
+    width: 60%;
+    padding: 20px;
+  }
   
+  .button {
+    border: 1px solid white;
+    border-radius: 3px;
+    padding: 10px;
+    background-color: bisque;
+    color: rgb(139, 32, 32);
+    box-shadow: 0 0 3px gainsboro;
+  }
+
   /*
   Использован стандартный конвертер SVG to Base 64.
   Иконки установлены в прозрачный квадрат 30х30px с закруглением углов в 4px.
