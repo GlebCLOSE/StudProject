@@ -13,11 +13,20 @@
     color: white;
 }
 
-.block_greywhite {
-  background-color: aliceblue;
+.block_background-moving {
+  background-image: url('back3.jpg');
+  color: white;
+}
+
+.motive {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  height: 500px;
+  columns: 1;
+}
+
+
+.block_greywhite {
+  background-color: rgb(241, 241, 240);
 }
 
 .block_white {
@@ -27,18 +36,24 @@
 }
 
 .about {
-  width: 80%;
+  width: 1100px;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.about__text {
+.about__body {
   width: 55%;
 }
 
+.about__title {font-size:50px;}
+.about__text{font-size:25px; padding-right: 15px}
+
 .about__imgblock {
   width: 45%;
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 30px;
 }
 
 .header {
@@ -87,30 +102,82 @@
 }
 
 .services {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  display: grid;
+  width: 1200px;
+  margin: auto;
+  grid-template-columns: auto auto auto;
+  gap: 40px;
+}
+
+.block__services {
+  padding-bottom: 100px;
+}
+
+.services__title {
+  font-size: 45px;
+  text-align: center;
+  padding-top: 130px;
+  padding-bottom: 70px;
 }
 
 .service {
-  width: 250px;
-  height: 250px;
+  display: grid;
+  grid-template-columns: auto;
 }
 
-service__image {
-  width: 200px;
-  height: 200px;
+.service__image {
+  width: 80px;
+  height: 80px;
+  margin: auto;
 }
 
-service__header {
+.service__header {
+  font-size: 35px;
+  text-align: center;
+}
+
+.service__text {
   font-size: 20px;
   text-align: center;
+  line-height: 1.6;
 }
 
-service__text {
-  font-size: 14px;
-  text-align: center;
+.block_advantages {
+  display: flex;
+  align-items: center;
+}
+
+.advantage-list {
+  width: 600px;
+}
+
+.advantage {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.advantage__img {
+  height: 100px;
+  width: 100px;
+  border: 2px solid red;
+}
+
+.advantage__textblock {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.advantage__title {font-size: 24px; margin: 0; padding:0}
+
+.advantage__text {font-size: 22px; margin: 0; padding:0}
+
+.block__title {
+  font-size: 45px;
+}
+
+.block__text {
+  font-size: 25px;
+  padding-bottom: 100px;
 }
 
 .social{
@@ -144,9 +211,13 @@ service__text {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 800px;
     width: 100%;
   }
+
+  .main__title {
+    height: 800px;
+  }
+
 
   .title__text {
     font-size: 50px;
