@@ -105,10 +105,12 @@ service__image {
 
 service__header {
   font-size: 20px;
+  text-align: center;
 }
 
 service__text {
   font-size: 14px;
+  text-align: center;
 }
 
 .social{
